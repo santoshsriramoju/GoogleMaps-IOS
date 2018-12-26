@@ -41,7 +41,7 @@ class ViewController: UIViewController{
         let config = URLSessionConfiguration.default
         let session = URLSession(configuration: config)
         
-        let url = URL(string: "https://maps.googleapis.com/maps/api/directions/json?origin=\(String(describing: tfFormLocation.text!))&destination=\(String(describing: tfToLocation.text!))&sensor=false&mode=driving&key=AIzaSyCDI5d-iGi6evYZQX-k97N1PRTzDrQFRhc")!
+        let url = URL(string: "https://maps.googleapis.com/maps/api/directions/json?origin=\(String(describing: tfFormLocation.text!))&destination=\(String(describing: tfToLocation.text!))&sensor=false&mode=driving&key=addyourapikey")!
         
         let task = session.dataTask(with: url, completionHandler: {
             (data, response, error) in
